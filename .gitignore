@@ -1,0 +1,7 @@
+target/
+project/boot/
+project/target/
+project/plugins/project/
+project/plugins/target/
+.DS_Store
+

@@ -1,0 +1,3 @@
+#!/bin/sh
+exec java -XX:MaxPermSize=256m -Xmx512M -Dfile.encoding=UTF-8 -jar `dirname $0`/sbt-launch.jar "$@"
+
