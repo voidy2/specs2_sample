@@ -24,7 +24,7 @@ object MyBuild extends Build {
   )
 
   lazy val root = Project("root", file(".")) settings(
-    docDirectory <<= baseDirectory(_ / "doc"),
+    docDirectory in Compile <<= baseDirectory(_ / "doc"),
     libraryDependencies ++= allDependencies,
     //testFrameworks += TestFrameworks.Specs2,
     testOptions := Seq(
